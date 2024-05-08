@@ -1,6 +1,6 @@
 function centerline_smoothed = perform_spline_smoothing(coords, d)
 
-% Performs cubic spline smoothing on the original centerline.
+% Performs cubic spline smoothing on a curve.
 %
 % Parameters:
 %   - coords (Nx2 double): Array containing the x and y coordinates.
@@ -11,7 +11,7 @@ function centerline_smoothed = perform_spline_smoothing(coords, d)
 %   - centerline_smoothed (Nx2 double): Smoothed coordinates obtained from the
 %                                       cubic spline interpolation.
 %
-% Note:
+% Tips:
 %   - The result WILL NOT pass all the original data points.
 %   - The spline smoothing parameter 'spline_p' is set to 0.0005. Adjust this value
 %     to modify the smoothing effect.

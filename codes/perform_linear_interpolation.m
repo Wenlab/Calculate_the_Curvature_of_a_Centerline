@@ -1,6 +1,6 @@
 function centerline_interpolated = perform_linear_interpolation(coords, d)
 
-% Performs linear interpolation on the smoothed centerline.
+% Performs linear interpolation on a curve.
 %
 % Parameters:
 %   - coords (Nx2 double): Array containing the x and y coordinates.

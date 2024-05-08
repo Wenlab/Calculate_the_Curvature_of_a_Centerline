@@ -8,9 +8,11 @@ function curvature_of_centerline = calculate_the_curvature_of_a_centerline(cente
 % Returns:
 %   - curvature_of_centerline (100x1 double): Array of curvature values.
 %
-% Notes:
+% Tips:
 %   - It is recommended to rescale the input coordinates to ensure they have at least 
-%   an order of magnitude of 10 to avoid precision issues during spline smoothing.
+%   the magnitude of 10 to avoid precision issues during spline
+%   smoothing. It is recommended to use centerlines in the relative frame,
+%   which have the magnitude of 100.
 %
 % Author:
 %   - Yixuan Li, 2024-05-08
