@@ -2,15 +2,21 @@ function curvature_of_centerline = calculate_the_curvature_of_a_centerline(cente
 
 % Calculates the curvature of a centerline.
 %
-% Input: a 2x100 numerical array where rows are x and y coordinates.
-% Output: a 100x1 numerical array of curvature values.
+% Parameters:
+%   - centerline (2x100 double): Numerical array of x and y coordinates.
 %
-% P.S.: rescale your input to make sure they have at least the order 
-% of 10, or there will be some issues when apply spline interpolation. 
+% Returns:
+%   - curvature_of_centerline (100x1 double): Array of curvature values.
 %
-% Yixuan Li, 2024-05-08.
+% Notes:
+%   - It is recommended to rescale the input coordinates to ensure they have at least 
+%   an order of magnitude of 10 to avoid precision issues during spline smoothing.
 %
-% yixuanli@mail.ustc.edu.cn
+% Author:
+%   - Yixuan Li, 2024-05-08
+%
+% Contact:
+%   - yixuanli@mail.ustc.edu.cn or bruce.yixuan.li@gmail.com
 %
 
 %% Calculate distances along the centerline
