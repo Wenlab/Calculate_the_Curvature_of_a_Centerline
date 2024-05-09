@@ -33,6 +33,6 @@ centerline_interpolated = perform_linear_interpolation(centerline_smoothed, d_sm
 centerline_interpolated = centerline_interpolated';
 
 %% Calculate curvature from the interpolated centerline
-curvature_of_centerline = calculate_curvature(centerline_interpolated');
+curvature_of_centerline = calculate_the_curvature(centerline_interpolated');
 
 end
