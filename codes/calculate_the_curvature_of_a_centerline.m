@@ -24,7 +24,7 @@ function curvature_of_centerline = calculate_the_curvature_of_a_centerline(cente
 %% Calculate distances along the centerline
 d = calculate_distances(centerline);
 
-%% Perform spline smooth
+%% Perform spline fit
 centerline_smoothed = perform_spline_smoothing(centerline, d);
 d_smoothed = calculate_distances(centerline_smoothed);
 
